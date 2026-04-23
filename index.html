@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Obligatorio P1 grupo 11</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div id="contenedor">
+    <header>
+      <img id="logo" src="https://p1.develotion.com/logo.jpg" alt="logo" />
+      <nav>
+        <ul id="navPrincipal">
+          <li class="pagina-usuario">
+            <a class="btn-navegacion" data-seccion-para-mostrar="usuListadoDePaseadores">Ver paseadores y contrataciones</a>
+          </li>
+          <li class="pagina-usuario">
+            <a class="btn-navegacion" data-seccion-para-mostrar="divPaginaUsuario">IR A INICIO</a>
+          </li>
+          <li class="pagina-paseador">
+            <a class="btn-navegacion" data-seccion-para-mostrar="misContrataciones">Mis contrataciones</a>
+          </li>
+          <li class="pagina-paseador">
+            <a class="btn-navegacion" data-seccion-para-mostrar="contratacionesPendientes">Contrataciones pendientes</a>
+          </li>
+          <li class="pagina-paseador">
+            <a class="btn-navegacion" data-seccion-para-mostrar="divPaginaPaseador">IR A INICIO</a>
+          </li>
+          <li class="pagina-usuario pagina-paseador">
+            <a id="btnLogout">Cerrar Sesion</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="divLogin" class="pagina">
+        <label for="txtLoginUsuario">Usuario:</label><br />
+        <input type="text" value="" id="txtLoginUsuario" /><br />
+        <label for="txtLoginPassword">Contraseña</label><br />
+        <input type="password" value="" id="txtLoginPassword" /><br />
+        <p id="pErroresLogin"></p>
+        <button id="btnLogin">Ingresar</button>
+        <p>¿No tienes una cuenta? <a href="#" id="btnRegistrase">Registrate como usuario</a></p>
+      </div>
+
+      <div id="divRegistro" class="pagina">
+        <label for="txtRegistroUsuarioNombre">Nombre de usuario:</label><br />
+        <input type="text" value="" id="txtRegistroUsuarioNombre" /><br />
+        <label for="txtRegistroUsuarioPass">Contraseña:</label><br />
+        <input type="password" value="" id="txtRegistroUsuarioPass" /><br />
+        <label for="txtRegistroPerroNombre">Nombre del perro:</label><br />
+        <input type="text" value="" id="txtRegistroPerroNombre" /><br />
+        <label for="slcTipoDePerro">Tamaño del perro:</label><br />
+        <select id="slcTipoDePerro">
+          <option value="select">Seleccione una opción</option>
+          <option value="Chico">Chico</option>
+          <option value="Mediano">Mediano</option>
+          <option value="Grande">Grande</option>
+        </select><br />
+        <p id="pErroresRegistro"></p>
+        <button id="btnRegistro">Registrarse</button>
+        <button id="btnCancelarRegistro">Volver a login</button>
+      </div>
+
+      <div id="divPaginaUsuario" class="pagina div-usuario">
+        <h1 id="hPaginaUsuario"></h1>
+        <p>¿No sabes por dónde empezar? <a href="#" class="btn-navegacion" data-seccion-para-mostrar="usuListadoDePaseadores">Empecemos conociendo a los paseadores</a></p>
+      </div>
+
+      <div id="usuListadoDePaseadores" class="pagina div-usuario">
+        <h1 id="hPaginaListadoPaseadores">Listado de paseadores</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Nombre paseador</th>
+              <th>Perros asignados</th>
+              <th>Conocer</th>
+            </tr>
+          </thead>
+          <tbody id="tblListadoPaseadores"></tbody>
+        </table>
+        <div id="infoPaseador"></div>
+        <div id="estadoContratacion"></div>
+      </div>
+
+      <div id="divPaginaPaseador" class="div-paseador pagina">
+        <h1 id="hPaginaPaseador"></h1>
+      </div>
+
+      <div id="contratacionesPendientes" class="pagina div-paseador">
+        <h2>Contrataciones pendientes</h2>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Cliente</th>
+              <th>Tamaño del perro</th>
+              <th>Aceptar</th>
+              <th>Rechazar</th>
+            </tr>
+          </thead>
+          <tbody id="tblAceptarContrataciones"></tbody>
+        </table>
+        <p id="pErrorCupo" style="color: red;"></p>
+
+      </div>
+
+      <div id="misContrataciones" class="pagina div-paseador">
+        <h2>Mis contrataciones aceptadas</h2>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Cliente</th>
+              <th>Tamaño del perro</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody id="tblMisContrataciones"></tbody>
+        </table>
+      </div>
+    </main>
+
+    <footer>
+      <a href="https://www.ort.edu.uy">Footer</a>
+    </footer>
+  </div>
+
+  <script src="js/clases.js"></script>
+  <script src="js/sistema.js"></script>
+  <script src="js/codigo.js"></script>
+</body>
+
+</html>
