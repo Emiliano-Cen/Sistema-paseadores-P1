@@ -44,7 +44,6 @@ Si se quiere entrar como usuario: sofia35 - pass: Sofroc9
 Si se quiere entrar como paseador: paseoMar - pass: Clave444A
 ---
 
-## 👨‍💻 Autor
-
+Autor
 Emiliano Cendali
 Estudiante de Analista en Tecnologías de la Información
