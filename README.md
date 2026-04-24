@@ -40,8 +40,8 @@ Simular el funcionamiento de un sistema real de gestión de paseadores, aplicand
 Cómo ejecutar
 1. Clonar o descargar el repositorio
 2. Abrir el Index.html
-Si se quiere entrar como usuario: sofia35 - pass: Sofroc9
-Si se quiere entrar como paseador: paseoMar - pass: Clave444A
+3. Si se quiere entrar como usuario: sofia35 - pass: Sofroc9
+4. Si se quiere entrar como paseador: paseoMar - pass: Clave444A
 ---
 
 Autor
